@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block pagecss %} 
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/login.css') }}">
+{% endblock pagecss %}
+
+{% block pagetitle %}
+    <h1>Flask Website: Login Page</h1>
+{% endblock pagetitle %}
+
+{% block body %}
+
+<div class="page-container-div">
+
+    <h2>Create account</h2>
+
+    <div class="form">
+            <form method="POST" action="">
+                <!-- {{ form.user_name.label }} -->
+                {{ form.user_name(placeholder="Enter User Name") }}
+                <br>
+                <!-- {{ form.user_email.label }} -->
+                {{ form.user_email(placeholder="Enter Email") }}
+                <br>
+                <!-- {{ form.password.label }} -->
+                {{ form.password(placeholder="Enter Password") }}
+                <br>
+                <!-- {{ form.confirm_password.label }} -->
+                {{ form.confirm_password(placeholder="Confirm Password") }}
+            </form>
+
+        </div>
+
+</div>
+{% endblock body %}

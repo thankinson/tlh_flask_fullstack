@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+    {% block pagecss %} {% endblock pagecss %}
+    {% block title %} {% endblock title %}
+</head>
+<body>
+
+    <div class="header-div">
+        {% block pagetitle %}
+            <!-- Website Title -->
+        {% endblock pagetitle %}
+        <nav></nav>
+    </div>
+
+    {% block body %}
+
+
+    {% endblock body %}
+    
+</body>
+</html>
