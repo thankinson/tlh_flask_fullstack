@@ -1,8 +1,6 @@
 from flask import Flask, render_template
-# from flask_wtf import FlaskForm
-# from wtforms import StringField, DateField, SearchField, SubmitField, PasswordField
-# from wtforms.validators import DataRequired, Length, ValidationError
 from application.crateuser import NewUser
+
 # application 
 app = Flask(__name__)
 app.config['SECRET_KEY']='bew_ldJsjOWMQvGqF50ebw'
